@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2026-03-16T20:07:03 CET" name="Surefire suite" finished-at="2026-03-16T20:07:06 CET" duration-ms="2862">
+    <groups>
+    </groups>
+    <test started-at="2026-03-16T20:07:03 CET" name="Surefire test" finished-at="2026-03-16T20:07:06 CET" duration-ms="2862">
+      <class name="com.qa.tests.ApiValidationTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.qa.tests.ApiValidationTest@3745e5c6]" started-at="2026-03-16T20:07:03 CET" name="setup" finished-at="2026-03-16T20:07:03 CET" duration-ms="264" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="validateCreateResource()[pri:0, instance:com.qa.tests.ApiValidationTest@3745e5c6]" started-at="2026-03-16T20:07:03 CET" name="validateCreateResource" description="Verify creating a new resource via POST" finished-at="2026-03-16T20:07:05 CET" duration-ms="1807" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateCreateResource -->
+        <test-method signature="validateResourceDetails()[pri:0, instance:com.qa.tests.ApiValidationTest@3745e5c6]" started-at="2026-03-16T20:07:05 CET" name="validateResourceDetails" description="Verify that a single resource contains the expected fields" finished-at="2026-03-16T20:07:05 CET" duration-ms="542" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateResourceDetails -->
+        <test-method signature="validateResourceList()[pri:0, instance:com.qa.tests.ApiValidationTest@3745e5c6]" started-at="2026-03-16T20:07:05 CET" name="validateResourceList" description="Check if the GET endpoint returns a 200 status and non-empty body" finished-at="2026-03-16T20:07:06 CET" duration-ms="226" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateResourceList -->
+      </class> <!-- com.qa.tests.ApiValidationTest -->
+    </test> <!-- Surefire test -->
+  </suite> <!-- Surefire suite -->
+</testng-results>

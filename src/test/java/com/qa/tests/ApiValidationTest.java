@@ -47,4 +47,19 @@ public class ApiValidationTest {
             .body("title", not(emptyOrNullString()))
             .body("body", notNullValue());
     }
+
+   @Test(description = "Verify creating a new resource via POST")
+    public void validateCreateResource() {
+        String payload = "{\"title\": \"foo\", \"body\": \"bar\", \"userId\": 1}";
+
+        given()
+            .contentType(ContentType.JSON)
+            .body(payload)
+        .when()
+            .post("/posts")
+        .then()
+            .statusCode(201) // 201 means 'Created'
+            .body("title", equalTo("foo"))
+            .body("id", notNullValue());
+    } 
 }
