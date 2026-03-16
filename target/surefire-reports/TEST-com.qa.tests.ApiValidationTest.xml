@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.qa.tests.ApiValidationTest" time="3.169" tests="3" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.qa.tests.ApiValidationTest" time="3.206" tests="4" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="17"/>
     <property name="sun.cpu.isalist" value="amd64"/>
@@ -15,7 +15,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="HU"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Eclipse Adoptium\jdk-17.0.17.10-hotspot\bin"/>
-    <property name="sun.java.command" value="C:\Users\agnes\AppData\Local\Temp\surefire13668089981339849600\surefirebooter-20260316200702820_3.jar C:\Users\agnes\AppData\Local\Temp\surefire13668089981339849600 2026-03-16T20-07-01_945-jvmRun1 surefire-20260316200702820_1tmp surefire_0-20260316200702820_2tmp"/>
+    <property name="sun.java.command" value="C:\Users\agnes\AppData\Local\Temp\surefire14642957938255792420\surefirebooter-20260316202503802_3.jar C:\Users\agnes\AppData\Local\Temp\surefire14642957938255792420 2026-03-16T20-25-03_670-jvmRun1 surefire-20260316202503802_1tmp surefire_0-20260316202503802_2tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="D:\Repositories\API-test-automation\target\test-classes;D:\Repositories\API-test-automation\target\classes;C:\Users\agnes\.m2\repository\io\rest-assured\rest-assured\5.3.0\rest-assured-5.3.0.jar;C:\Users\agnes\.m2\repository\org\apache\groovy\groovy\4.0.6\groovy-4.0.6.jar;C:\Users\agnes\.m2\repository\org\apache\groovy\groovy-xml\4.0.6\groovy-xml-4.0.6.jar;C:\Users\agnes\.m2\repository\org\apache\httpcomponents\httpclient\4.5.13\httpclient-4.5.13.jar;C:\Users\agnes\.m2\repository\org\apache\httpcomponents\httpcore\4.4.13\httpcore-4.4.13.jar;C:\Users\agnes\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\agnes\.m2\repository\commons-codec\commons-codec\1.11\commons-codec-1.11.jar;C:\Users\agnes\.m2\repository\org\apache\httpcomponents\httpmime\4.5.13\httpmime-4.5.13.jar;C:\Users\agnes\.m2\repository\org\hamcrest\hamcrest\2.1\hamcrest-2.1.jar;C:\Users\agnes\.m2\repository\org\ccil\cowan\tagsoup\tagsoup\1.2.1\tagsoup-1.2.1.jar;C:\Users\agnes\.m2\repository\io\rest-assured\json-path\5.3.0\json-path-5.3.0.jar;C:\Users\agnes\.m2\repository\org\apache\groovy\groovy-json\4.0.6\groovy-json-4.0.6.jar;C:\Users\agnes\.m2\repository\io\rest-assured\rest-assured-common\5.3.0\rest-assured-common-5.3.0.jar;C:\Users\agnes\.m2\repository\io\rest-assured\xml-path\5.3.0\xml-path-5.3.0.jar;C:\Users\agnes\.m2\repository\org\apache\commons\commons-lang3\3.11\commons-lang3-3.11.jar;C:\Users\agnes\.m2\repository\org\testng\testng\7.7.0\testng-7.7.0.jar;C:\Users\agnes\.m2\repository\org\slf4j\slf4j-api\1.7.36\slf4j-api-1.7.36.jar;C:\Users\agnes\.m2\repository\com\beust\jcommander\1.82\jcommander-1.82.jar;C:\Users\agnes\.m2\repository\org\webjars\jquery\3.6.1\jquery-3.6.1.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -30,7 +30,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="C:\Users\agnes\AppData\Local\Temp\surefire13668089981339849600\surefirebooter-20260316200702820_3.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\agnes\AppData\Local\Temp\surefire14642957938255792420\surefirebooter-20260316202503802_3.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="17.0.17+10"/>
@@ -58,12 +58,43 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="61.0"/>
   </properties>
-  <testcase name="validateCreateResource" classname="com.qa.tests.ApiValidationTest" time="1.807">
+  <testcase name="validateCreateResource" classname="com.qa.tests.ApiValidationTest" time="1.903">
     <system-err><![CDATA[SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
 SLF4J: Defaulting to no-operation (NOP) logger implementation
 SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
 ]]></system-err>
   </testcase>
-  <testcase name="validateResourceDetails" classname="com.qa.tests.ApiValidationTest" time="0.54"/>
-  <testcase name="validateResourceList" classname="com.qa.tests.ApiValidationTest" time="0.225"/>
+  <testcase name="validateNotFoundResponse" classname="com.qa.tests.ApiValidationTest" time="0.566">
+    <system-out><![CDATA[HTTP/1.1 404 Not Found
+Date: Mon, 16 Mar 2026 19:25:07 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 2
+Connection: keep-alive
+access-control-allow-credentials: true
+Cache-Control: max-age=43200
+etag: W/"2-vyGp6PvFo4RvsFtPoIWeCReyIC8"
+expires: -1
+nel: {"report_to":"heroku-nel","response_headers":["Via"],"max_age":3600,"success_fraction":0.01,"failure_fraction":0.1}
+pragma: no-cache
+report-to: {"group":"heroku-nel","endpoints":[{"url":"https://nel.heroku.com/reports?s=90FG%2FYTn0kMlb%2FSDp9q4pX8gsAhdHro1H7qcZvrwYa0%3D\u0026sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d\u0026ts=1773689107"}],"max_age":3600}
+reporting-endpoints: heroku-nel="https://nel.heroku.com/reports?s=90FG%2FYTn0kMlb%2FSDp9q4pX8gsAhdHro1H7qcZvrwYa0%3D&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&ts=1773689107"
+Server: cloudflare
+vary: Origin, Accept-Encoding
+via: 2.0 heroku-router
+x-content-type-options: nosniff
+x-powered-by: Express
+x-ratelimit-limit: 1000
+x-ratelimit-remaining: 998
+x-ratelimit-reset: 1773689146
+cf-cache-status: MISS
+CF-RAY: 9dd624553c8adcd3-MLA
+alt-svc: h3=":443"; ma=86400
+
+{
+    
+}
+]]></system-out>
+  </testcase>
+  <testcase name="validateResourceDetails" classname="com.qa.tests.ApiValidationTest" time="0.056"/>
+  <testcase name="validateResourceList" classname="com.qa.tests.ApiValidationTest" time="0.089"/>
 </testsuite>
