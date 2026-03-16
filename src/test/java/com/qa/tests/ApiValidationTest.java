@@ -62,4 +62,17 @@ public class ApiValidationTest {
             .body("title", equalTo("foo"))
             .body("id", notNullValue());
     } 
+
+    @Test(description = "Verify that requesting a non-existent resource returns 404 Not Found")
+    public void validateNotFoundResponse() {
+        int nonExistentId = 9999;
+
+        given()
+            .pathParam("id", nonExistentId)
+        .when()
+            .get("/posts/{id}")
+        .then()
+            .statusCode(404) // Expected: Not Found
+            .log().all(); // Log the response for better debugging if needed
+    }
 }
